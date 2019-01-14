@@ -6,9 +6,14 @@ Feature: CareerSearch based on valid keyword
     Then Careers menu item is displayed
     When User clicks on Careers link
     Then Careers Page is displayed with current vacancies listed
-    And User enters valid keyword as Analyst
+    And User enter following as keyword
+      | ValidKeyword |
+      | Specialist   |
+      | Analyst      |
     And I click enter key
     Then Vacancies based on the criteria is displayed
-    And user selects location as Singapore
+    And user selects following location
+      |location|
+      | Singapore |
     Then vacancies specific to location is displayed
     Then Close Browser

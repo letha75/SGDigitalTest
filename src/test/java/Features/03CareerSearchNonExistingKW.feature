@@ -6,7 +6,9 @@ Feature: CareerSearch based on non existing keyword
     Then Careers menu item is displayed
     When User clicks on Careers link
     Then Careers Page is displayed with current vacancies listed
-    And User enters non existing keyword as "abcdefg"
+    And User enter following as keyword
+      | Non existing Keyword |
+      | abcdefg              |
     And I click enter key
     Then Vacancies based on the criteria is displayed
     Then Close Browser
